@@ -1,0 +1,34 @@
+Situation:
+The growing popularity of music streaming platforms like Spotify has led to an immense amount of user interaction data. Spotify users interact with millions of tracks daily, but recommending the right song to each user based on their preferences remains a challenge. The goal of the project was to predict whether a user would like a given song based on its musical features (e.g., danceability, energy, acousticness), thus improving song recommendations and overall user engagement.
+
+Spotify’s dataset contained various features related to the musical aspects of tracks, but predicting individual user preferences required an effective analysis and model implementation to accurately assess which songs users are likely to enjoy. The challenge was to develop a machine learning model capable of classifying a user’s preference based on these features.
+
+Task:
+The primary task was to develop and implement a machine learning model that could predict user preferences for Spotify tracks. This included:
+
+Data Exploration and Analysis: Understanding the relationships between various musical features and how they impact user preferences.
+Feature Selection: Identifying which song features (e.g., danceability, energy, acousticness) were most relevant to users' preferences.
+Model Development: Implementing a classification algorithm, such as Logistic Regression, that could learn from the data and make accurate predictions.
+Performance Evaluation: Evaluating the model’s accuracy and effectiveness through various metrics like precision, recall, and overall accuracy.
+Action:
+
+Data Analysis:
+I began by exploring and visualizing the dataset to understand its statistical properties. This included analyzing distributions of song features like danceability, energy, and acousticness, as well as studying correlations between these features and user preferences. This initial exploration helped identify key attributes that influenced user preferences the most.
+
+Feature Selection:
+Based on the analysis, I selected the most impactful features for the model, focusing on those with strong correlations to user preferences. This step ensured that the model was trained using only the most relevant data, enhancing its prediction power.
+
+Model Implementation:
+I chose to implement a Logistic Regression model, a widely used classification algorithm for binary outcomes (in this case, whether the user likes or dislikes a song). Using Python and NumPy, I built and trained the model using gradient descent. To further understand how the model was making decisions, I visualized the decision boundary, allowing me to interpret how various musical features influenced the model’s predictions.
+
+Performance Evaluation:
+After training the model, I evaluated its performance using standard classification metrics, including accuracy, precision, and recall. The model achieved an accuracy of 84.6%, with balanced precision and recall metrics, indicating its strong ability to correctly predict user preferences while maintaining a low rate of false positives and negatives.
+
+Result:
+The project successfully demonstrated the ability to predict Spotify user preferences based on musical features. Key results included:
+
+Accuracy: The model achieved an accuracy rate of 84.6%, meaning it could accurately predict user preferences most of the time.
+Balanced Precision and Recall: The model maintained strong performance metrics, balancing both precision (correct positive predictions) and recall (identifying all positive cases), ensuring a well-rounded evaluation.
+Actionable Insights: The project provided insights into which musical features (e.g., danceability, energy) were most predictive of user preferences, offering potential for use in Spotify’s recommendation systems.
+Skill Application: This project demonstrated my ability to apply machine learning techniques, use Python for model development, and analyze real-world datasets effectively.
+The predictive model developed through this project has the potential to improve user experience by enhancing the accuracy of Spotify’s recommendation engine, ultimately driving user engagement and satisfaction.
